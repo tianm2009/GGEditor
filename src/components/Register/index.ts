@@ -27,9 +27,9 @@ class Register extends React.Component<RegisterProps, RegisterState> {
     const { name, config, extend } = props;
 
     if (type === 'command') {
-      commandManager.register({
+      commandManager.register(name, {
         name,
-        config,
+        ...config,
       });
 
       return;

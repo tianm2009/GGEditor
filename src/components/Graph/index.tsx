@@ -100,7 +100,7 @@ class EditorGraph extends React.Component<EditorGraphProps, EditorGraphState> {
 
     this.graph.data(data);
     this.graph.render();
-    this.graph.fitView();
+    //this.graph.fitView();
 
     setGraph(this.graph);
 
